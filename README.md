@@ -1,3 +1,3 @@
-# SqlUpserter
+# Spike.SqlUpserter
 
-SQL batching via SQLBulkCopy and Merge Stored Procedure
+SQL batching via SQLBulkCopy and automatically generated Stored Procedure (Merge)
