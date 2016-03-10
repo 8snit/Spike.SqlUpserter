@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.SqlUpserter", "Spike.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.SqlUpserter.Tests", "Spike.SqlUpserter.Tests\Spike.SqlUpserter.Tests.csproj", "{ABD27C3D-4309-4059-939B-A38312E92BFC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{E381EA27-5237-49AB-ACA3-5A06D611D430}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github", "Github", "{E381EA27-5237-49AB-ACA3-5A06D611D430}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
 		README.md = README.md
