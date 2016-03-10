@@ -4,7 +4,7 @@ SQL batching with SqlBulkCopy
 
 ### Introduction
 
-Spike of a simple SQL batching component using SqlBulkCopy together with an automatically generated Stored Procedure (Merge)
+Spike of a simple SQL batching component using SqlBulkCopy together with an automatically generated Stored Procedure for database merge.
 
 ### Usage
 
