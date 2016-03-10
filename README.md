@@ -1,17 +1,17 @@
 # Spike.SqlUpserter
 
-SQL batching with C# code
+SQL batching with SqlBulkCopy
 
 ### Introduction
 
-Spike to demonstrate SqlBulkCopy together with an automatically generated Stored Procedure (Merge) for SQL batching with C# code.
+Spike of a simple SQL batching component using SqlBulkCopy together with an automatically generated Stored Procedure (Merge)
 
 ### Usage
 
 Provide the corresponding database mapping...
 
 ```c#
-	var sqlTableMapper = new SqlTableMapper<Student>();
+    var sqlTableMapper = new SqlTableMapper<Student>();
     sqlTableMapper.Add(student => student.Id, "id", "bigint", isPrimaryKey: true);
     sqlTableMapper.Add(student => student.FirstName, "firstname", "varchar(50)");
     sqlTableMapper.Add(student => student.LastName, "lastname", "varchar(50)");
@@ -24,7 +24,7 @@ Provide the corresponding database mapping...
 ...and simple upload all data with the SqlUpserter component:
 
 ```c#
-	var students = <sample data>
+    var students = <sample data>
     using (var sqlConnection = DatabaseHelper.OpenSqlConnection(DatabaseName))
     {
         var sqlUpserter = new SqlUpserter<Student>(StudentMapper, TableName, students);
