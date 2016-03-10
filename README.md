@@ -11,7 +11,7 @@ Spike to demonstrate SqlBulkCopy together with an automatically generated Stored
 Provide the corresponding database mapping...
 
 ```c#
-	 var sqlTableMapper = new SqlTableMapper<Student>();
+	var sqlTableMapper = new SqlTableMapper<Student>();
     sqlTableMapper.Add(student => student.Id, "id", "bigint", isPrimaryKey: true);
     sqlTableMapper.Add(student => student.FirstName, "firstname", "varchar(50)");
     sqlTableMapper.Add(student => student.LastName, "lastname", "varchar(50)");
