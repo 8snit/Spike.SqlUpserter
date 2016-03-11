@@ -1,4 +1,4 @@
-# Spike.SqlUpserter
+# SqlUpserter
 
 SQL batching with SqlBulkCopy
 
